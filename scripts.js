@@ -42,6 +42,10 @@ red.style.float = "left";
 red.style.backgroundColor = "red";
 document.getElementById("colorPad").appendChild(red);
 
+//Add Red Event Listener
+var redPaint = document.getElementById("colorPad").getElementsByTagName("div")[0];
+redPaint.addEventListener("click")
+
 
 var orange = document.createElement("div");
 orange.style.height = "20px";
@@ -86,13 +90,6 @@ grey.style.float = "left";
 grey.style.backgroundColor = "grey";
 document.getElementById("colorPad").appendChild(grey);
 
-// var brown = document.createElement("div");
-// brown.style.height = "20px";
-// brown.style.width = "100px";
-// brown.style.float = "left";
-// document.getElementById("colorPad").appendChild(brown);
-
-
 
 var brown = document.createElement("div");
 brown.style.height = "20px";
@@ -104,5 +101,10 @@ document.getElementById("colorPad").appendChild(brown);
 function turnBlue() {
 	this.style.backgroundColor = "blue";
 }
+
+function turnRed() {
+	this.style.backgroundColor = "red";
+}
+
 };
 
