@@ -44,7 +44,7 @@ document.getElementById("colorPad").appendChild(red);
 
 //Add Red Event Listener
 var redPaint = document.getElementById("colorPad").getElementsByTagName("div")[0];
-redPaint.addEventListener("click")
+redPaint.addEventListener("click", turnRed);
 
 
 var orange = document.createElement("div");
@@ -103,8 +103,9 @@ function turnBlue() {
 }
 
 function turnRed() {
-	this.style.backgroundColor = "red";
+	newBox.removeEventListener();
+	newBox.addEventListener("click",this.style.backgroundColor ="red");
+	
 }
-
 };
 
