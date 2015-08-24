@@ -18,11 +18,11 @@ document.body.appendChild(container);
 		newBox.style.height = "20px";
 		newBox.style.width = "20px";
 		// newBox.style.backgroundColor = "white";
-		newBox.style.border = "1px solid black";
+		newBox.style.border = "1px ";
 		newBox.style.float = "left";
 		newBox.style.boxSizing = "border-box";
 		document.querySelector(".container").appendChild(newBox);
-		newBox.addEventListener("click", turnBlue);
+		// newBox.addEventListener("click", turnBlue);
 	}
 
 
@@ -46,8 +46,9 @@ document.getElementById("colorPad").appendChild(red);
 redBox.addEventListener("click", function(){
 	var divs = document.querySelectorAll("div");
 	for (var i=1; i<801; i++){
-	divs[i].removeEventListener("click");
+	
 	divs[i].addEventListener("click", turnRed);
+	divs[i].removeEventListener("click", turnOrange);
 
 }
 });
@@ -64,8 +65,16 @@ document.getElementById("colorPad").appendChild(orange);
 orangeBox.addEventListener("click", function(){
 	var divs = document.querySelectorAll("div");
 	for (var i=1; i<801; i++){
-	divs[i].removeEventListener("click");
+
 	divs[i].addEventListener("click", turnOrange);
+	divs[i].removeEventListener("click", turnRed);
+	divs[i].removeEventListener("click", turnYellow);
+	divs[i].removeEventListener("click", turnBlue);
+	divs[i].removeEventListener("click", turnGreen);
+	divs[i].removeEventListener("click", turnGrey);
+	divs[i].removeEventListener("click", turnPurple);
+	divs[i].removeEventListener("click", turnBrown);
+	
 
 }
 });
@@ -80,8 +89,15 @@ document.getElementById("colorPad").appendChild(yellow);
 yellowBox.addEventListener("click", function(){
 	var divs = document.querySelectorAll("div");
 	for (var i=1; i<801; i++){
-	divs[i].removeEventListener("click");
+	
 	divs[i].addEventListener("click", turnYellow);
+	divs[i].removeEventListener("click", turnRed);
+	divs[i].removeEventListener("click", turnOrange);
+	divs[i].removeEventListener("click", turnBlue);
+	divs[i].removeEventListener("click", turnGreen);
+	divs[i].removeEventListener("click", turnGrey);
+	divs[i].removeEventListener("click", turnPurple);
+	divs[i].removeEventListener("click", turnBrown);
 
 }
 });
@@ -96,8 +112,15 @@ document.getElementById("colorPad").appendChild(green);
 greenBox.addEventListener("click", function(){
 	var divs = document.querySelectorAll("div");
 	for (var i=1; i<801; i++){
-	divs[i].removeEventListener("click");
+	
 	divs[i].addEventListener("click", turnGreen);
+	divs[i].removeEventListener("click", turnRed);
+	divs[i].removeEventListener("click", turnYellow);
+	divs[i].removeEventListener("click", turnBlue);
+	divs[i].removeEventListener("click", turnOrange);
+	divs[i].removeEventListener("click", turnGrey);
+	divs[i].removeEventListener("click", turnPurple);
+	divs[i].removeEventListener("click", turnBrown);
 
 }
 });
@@ -112,8 +135,15 @@ document.getElementById("colorPad").appendChild(blue);
 blueBox.addEventListener("click", function(){
 	var divs = document.querySelectorAll("div");
 	for (var i=1; i<801; i++){
-	divs[i].removeEventListener("click");
+	
 	divs[i].addEventListener("click", turnBlue);
+	divs[i].removeEventListener("click", turnRed);
+	divs[i].removeEventListener("click", turnYellow);
+	divs[i].removeEventListener("click", turnOrange);
+	divs[i].removeEventListener("click", turnGreen);
+	divs[i].removeEventListener("click", turnGrey);
+	divs[i].removeEventListener("click", turnPurple);
+	divs[i].removeEventListener("click", turnBrown);
 
 }
 });
@@ -129,8 +159,15 @@ document.getElementById("colorPad").appendChild(purple);
 purpleBox.addEventListener("click", function(){
 	var divs = document.querySelectorAll("div");
 	for (var i=1; i<801; i++){
-	divs[i].removeEventListener("click");
+
 	divs[i].addEventListener("click", turnPurple);
+	divs[i].removeEventListener("click", turnRed);
+	divs[i].removeEventListener("mouseover", turnYellow);
+	divs[i].removeEventListener("click", turnBlue);
+	divs[i].removeEventListener("click", turnGreen);
+	divs[i].removeEventListener("click", turnGrey);
+	divs[i].removeEventListener("click", turnOrange);
+	divs[i].removeEventListener("click", turnBrown);
 
 }
 });
@@ -145,8 +182,15 @@ document.getElementById("colorPad").appendChild(grey);
 greyBox.addEventListener("click", function(){
 	var divs = document.querySelectorAll("div");
 	for (var i=1; i<801; i++){
-	divs[i].removeEventListener("click");
+	
 	divs[i].addEventListener("click", turnGrey);
+	divs[i].removeEventListener("click", turnRed);
+	divs[i].removeEventListener("click", turnYellow);
+	divs[i].removeEventListener("click", turnBlue);
+	divs[i].removeEventListener("click", turnGreen);
+	divs[i].removeEventListener("click", turnOrange);
+	divs[i].removeEventListener("click", turnPurple);
+	divs[i].removeEventListener("click", turnBrown);
 
 }
 });
@@ -162,8 +206,15 @@ document.getElementById("colorPad").appendChild(brown);
 brownBox.addEventListener("click", function(){
 	var divs = document.querySelectorAll("div");
 	for (var i=1; i<801; i++){
-	divs[i].removeEventListener("click");
+	
 	divs[i].addEventListener("click", turnBrown);
+	divs[i].removeEventListener("click", turnRed);
+	divs[i].removeEventListener("click", turnYellow);
+	divs[i].removeEventListener("click", turnBlue);
+	divs[i].removeEventListener("click", turnGreen);
+	divs[i].removeEventListener("click", turnGrey);
+	divs[i].removeEventListener("click", turnPurple);
+	divs[i].removeEventListener("click", turnOrange);
 
 }
 });
